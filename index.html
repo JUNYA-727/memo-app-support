@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メモ - サポート</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #0a8cb8;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1a1d22;
+      --sub: #5a6070;
+      --border: #e4e8ef;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0 16px 60px;
+    }
+
+    header {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 52px 0 36px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(145deg, #0a8cb8, #06b8a2);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 4px 16px rgba(10,140,184,0.28);
+      flex-shrink: 0;
+    }
+
+    .header-text h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .header-text p {
+      font-size: 14px;
+      color: var(--sub);
+      margin-top: 3px;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-box {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-box .icon { font-size: 22px; }
+
+    .contact-box a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .contact-box p {
+      font-size: 13px;
+      color: var(--sub);
+      margin-top: 2px;
+    }
+
+    .faq-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .faq-item:first-child { padding-top: 0; }
+
+    .faq-item .q {
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 6px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .faq-item .q::before {
+      content: "Q";
+      color: var(--accent);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .faq-item .a {
+      font-size: 14px;
+      color: var(--sub);
+      padding-left: 20px;
+    }
+
+    .privacy-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .privacy-link::after { content: "›"; font-size: 20px; color: var(--sub); }
+
+    footer {
+      max-width: 680px;
+      margin: 32px auto 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--sub);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="app-icon">📝</div>
+    <div class="header-text">
+      <h1>メモ</h1>
+      <p>サポートページ</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>✉️ お問い合わせ</h2>
+      <div class="contact-box">
+        <span class="icon">📧</span>
+        <div>
+          <a href="mailto:k.junya0727@gmail.com">k.junya0727@gmail.com</a>
+          <p>バグ報告・ご要望・ご質問はこちら</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>❓ よくある質問</h2>
+
+      <div class="faq-item">
+        <div class="q">メモのデータはどこに保存されますか？</div>
+        <div class="a">すべてのデータはお使いの iPhone 本体にのみ保存されます。外部サーバーへの送信は一切行いません。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="q">ウィジェットにメモが表示されません。</div>
+        <div class="a">アプリを一度開いてメモを追加してください。ウィジェットは自動的に更新されます。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="q">通知が届きません。</div>
+        <div class="a">iPhone の設定 → 通知 → メモ から、通知が許可されているかご確認ください。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="q">音声メモが録音できません。</div>
+        <div class="a">iPhone の設定 → プライバシーとセキュリティ → マイク → メモ がオンになっているかご確認ください。</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="privacy.html" class="privacy-link">🔒 プライバシーポリシー</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Junya Kuramochi</p>
+  </footer>
+</body>
+</html>
